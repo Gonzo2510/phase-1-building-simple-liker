@@ -4,7 +4,11 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
-
+document.querySelectorAll('.like-glyph').forEach(element => {
+  element.addEventListener('click',() => mimicServerCall()
+  .then(result => console.log(result))
+  .catch(error => console.log(error)))
+});
 
 
 //------------------------------------------------------------------------------
